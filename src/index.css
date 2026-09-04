@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Noto Sans KR", "Inter", system-ui, sans-serif;
+  --font-display: "Hanken Grotesk", sans-serif;
+  
+  --color-brand-blue: #0055d3;
+  --color-brand-blue-dark: #0040a2;
+  --color-brand-blue-light: #dae2ff;
+  --color-brand-blue-hover: #1a6dff;
+  --color-brand-blue-pale: #ebf3ff;
+  
+  --color-brand-green: #0e6e00;
+  --color-brand-green-light: #78ff5c;
+  --color-brand-green-neon: #1ebf00;
+  
+  --color-neutral-dark: #191c1e;
+  --color-neutral-medium: #424655;
+  --color-neutral-gray: #666666;
+  --color-neutral-muted: #999999;
+  --color-neutral-bg: #f7f9fc;
+  --color-neutral-border: #e5e7eb;
+}
+
+body {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  word-break: keep-all;
+}
+
+/* Custom styles for animations or subtle layouts */
+@keyframes pulse-slow {
+  0%, 100% { opacity: 0.8; }
+  50% { opacity: 1; }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.6; filter: drop-shadow(0 0 2px rgba(255,255,255,0.4)); }
+  50% { opacity: 1; filter: drop-shadow(0 0 10px rgba(255,255,255,0.9)); }
+}
+
+.animate-twinkle {
+  animation: twinkle 1.5s ease-in-out infinite;
+}
+
+

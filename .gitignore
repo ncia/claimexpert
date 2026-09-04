@@ -1,0 +1,13 @@
+node_modules/
+build/
+dist/
+coverage/
+.DS_Store
+*.log
+.env*
+!.env.example
+google_key.php
+test_google.*
+target.txt
+replacement.txt
+
