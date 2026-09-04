@@ -572,7 +572,7 @@ export default function App() {
             {/* EVENT BANNER AD */}
             <section className="w-full border-b border-neutral-border overflow-hidden bg-[#FFDCA8]">
               <img
-                src="/coffee_event_banner.jpg?v=5"
+                src="/coffee_event_banner.jpg?v=3"
                 alt="메가커피 증정 이벤트"
                 className="w-full h-auto object-cover block"
               />
